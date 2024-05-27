@@ -1,0 +1,6 @@
+﻿  Classes.cpp
+C:\Users\Prizrak\Desktop\Classes CpluspLUS\Classes\Classes\Classes.cpp(77,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Prizrak\Desktop\Classes CpluspLUS\Classes\Classes\Classes.cpp(51,12): warning C4101: 'numb2': unreferenced local variable
+C:\Users\Prizrak\Desktop\Classes CpluspLUS\Classes\Classes\Classes.cpp(51,6): warning C4101: 'numb': unreferenced local variable
+C:\Users\Prizrak\Desktop\Classes CpluspLUS\Classes\Classes\Classes.cpp(51,19): warning C4101: 'numb3': unreferenced local variable
+  Classes.vcxproj -> C:\Users\Prizrak\Desktop\Classes CpluspLUS\Classes\x64\Debug\Classes.exe
