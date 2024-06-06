@@ -1,0 +1,9 @@
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/MainMenu.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/edit_cache.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/list_install_components.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install/local.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install/strip.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/MainMenu_autogen_timestamp_deps.dir
+/home/whoiam/MainMenu/MainMenu/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/MainMenu_autogen.dir
