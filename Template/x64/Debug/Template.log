@@ -1,0 +1,3 @@
+﻿  Template.cpp
+C:\Users\WhoIam\source\repos\Template\Template\Template.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Template.vcxproj -> C:\Users\WhoIam\source\repos\Template\x64\Debug\Template.exe
