@@ -1,0 +1,3 @@
+﻿  rand twister c11.cpp
+C:\Users\WhoIam\source\repos\rand twister c11\rand twister c11\rand twister c11.cpp(15,29): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  rand twister c11.vcxproj -> C:\Users\WhoIam\source\repos\rand twister c11\x64\Debug\rand twister c11.exe
