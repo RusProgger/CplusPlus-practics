@@ -9,8 +9,6 @@
 #include "colors.h";
 
 
-
-
 int main() {
 
 	// Лоакализация для русского языка
@@ -20,6 +18,12 @@ int main() {
 	// создаем переменную для ввода пароля
 
 	std::string password;
+
+	// Выводим сообщение пользователю
+
+	std::cout << termcolor::on_blue << "Здравствуйте. Автор программы является Руслан Вороненко.\n" << termcolor::reset;
+	std::cout << termcolor::on_bright_cyan << termcolor::red << "Дата релиза:  04/12/2024\n" << termcolor::reset;
+
 
 	// Вводим пароль 
 
@@ -57,27 +61,34 @@ int main() {
 
 	// Логика обработки сложности пароля
 
-	if (numberCount <= 3 && symbolCount < 2 && stringCount < 1) {
-		std::cout << RED << "Ваш пароль довольно слабый " << RESET << std::endl;
+	if ((numberCount > 1 && symbolCount < 2 && stringCount < 1)) {
+		std::cout << termcolor::red << "Ваш пароль довольно слабый " << termcolor::reset<< std::endl;
 	}
 
-	else if (numberCount > 4 && symbolCount >= 2 && stringCount >= 1) {
-		std::cout << YELLOW << "Ваш пароль средний." << RESET << std::endl;
+	else if (numberCount > 3 && symbolCount > 2 && stringCount > 3) {
+		std::this_thread::sleep_for(std::chrono::seconds(1));
+		std::cout << termcolor::yellow << "Ваш пароль средний." << termcolor::yellow<< std::endl;
 	}
 
-	else if (numberCount > 4 && stringCount >= 2) {
-		std::cout << YELLOW << "Ваш пароль средний, но не хватает символов.." << RESET << std::endl;
+	else if (numberCount > 4 && stringCount >= 2 ) {
+		std::this_thread::sleep_for(std::chrono::seconds(1));
+		std::cout << termcolor::yellow << "Ваш пароль средний, но не хватает символов.." << termcolor::reset << std::endl;
 	}
 
-	else if (numberCount > 5 && symbolCount > 3 && stringCount > 4) {
-		std::cout << GREEN << "Ваш пароль сложный." << RESET << std::endl;
+	else if (numberCount >= 5 && symbolCount >= 3 && stringCount > 4) {
+		std::this_thread::sleep_for(std::chrono::seconds(1));
+		std::cout << termcolor::green << "Ваш пароль сложный." << termcolor::reset << std::endl;
 	}
 
 	else {
-		std::cout << LightMagenta << "Ваш пароль не соотвествует никаким критериям сложности." << RESET << std::endl;
+		std::this_thread::sleep_for(std::chrono::milliseconds(1200));
+		std::cout << termcolor::magenta << "Ваш пароль не соотвествует никаким критериям сложности." << termcolor::reset << std::endl;
 	}
 
-	std::cout << BOLDGREEN << "Спасибо за использование данной программы.\n" << RESET;
+	std::this_thread::sleep_for(std::chrono::seconds(1));
+	std::cout << termcolor::cyan << "Спасибо за использование данной программы.\n" << termcolor::reset;
+
+
 
 	// Создадим макрос для кроссплатформенности для Windows систем и Linux систем а также MacOS
 
