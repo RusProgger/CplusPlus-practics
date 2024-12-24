@@ -9,6 +9,8 @@ int main() {
     std::string t = h;
 
     t += ", world!";
+    std::cout << h << std::endl;
     std::cout << t << std::endl;
+
 }
 
