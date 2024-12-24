@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 #include <vector>
 #include <algorithm>
+#include <chrono>
+#include <thread>
 
 
 int main() {
@@ -34,8 +36,14 @@ int main() {
     std::vector<std::string> user = {"Вася", "Петя", "Николай", "Юрий", "Прайс"};
 
     std::for_each(user.begin(), user.end(), [](std::string i) {
-        std::cout << i << std::endl;
+        std::cout << "Имя: " << i << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     });
+
+    std::cout << std::endl;
+    std::cout << "***********************************" << std::endl;
+
+
 
 }
 
