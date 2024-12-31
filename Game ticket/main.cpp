@@ -23,9 +23,9 @@ int main() {
     
     std::cout << name << std::endl;
     
-    std::random_device rd;  // Источник случайной энтропии (может не быть доступным на всех платформах)
-    std::mt19937 gen(rd()); // Используем Mersenne Twister 19937 в качестве генератора
-    std::uniform_int_distribution<int> dis(1, 100); // Равномерное распределение от 1 до 6 (включительно)
+    std::random_device rd;  
+    std::mt19937 gen(rd()); 
+    std::uniform_int_distribution<int> dis(1, 100); 
 
     // Генерация случайных чисел
     
