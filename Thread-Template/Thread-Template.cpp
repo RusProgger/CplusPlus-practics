@@ -10,7 +10,7 @@ std::atomic<int> count(0);
 void printMessage(const std::string& message) {
 	std::cout << message << std::endl;
 }
-
+// function counter
 void counter() {
 	for (int a = 0; a < 1000; a++) {
 		count.fetch_add(1, std::memory_order_relaxed);
