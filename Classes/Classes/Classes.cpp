@@ -29,9 +29,9 @@ class TimeZone {
 		return time_str; // Âîçâðàùàåì ñòðîêó âðåìåíè
 	}
 };
-
+// class User public
 class User {
-
+	
 	public:
 		void users() {
 			std::cout << "Ïðèâåòñòâóþ! Äàííàÿ ïðîãðàììà ÿâëÿåòñÿ áåñïëàòíîé." << std::endl;
