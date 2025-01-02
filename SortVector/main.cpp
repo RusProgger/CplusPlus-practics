@@ -27,6 +27,7 @@ int main() {
 
     // Выводим отсортированный вектор
     std::cout << "Отсортированный вектор: " << std::endl;
+    // for vector i
     for (int i = 0; i < numbers.size(); ++i) {
         std::cout << "Индекс: " << i << ", Значение: " << numbers[i] << std::endl;
     }
