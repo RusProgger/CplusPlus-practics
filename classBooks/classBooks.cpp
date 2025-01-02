@@ -20,7 +20,7 @@ class Books {
 
 int main()
 {
-   
+   	// locale Ru
 	std::locale::global(std::locale(""));
 
 	Books programming;
