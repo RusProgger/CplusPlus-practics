@@ -19,6 +19,7 @@ void counter() {
 
 
 int main() {
+	// locale Ru
 
 	std::locale::global(std::locale(""));
 
