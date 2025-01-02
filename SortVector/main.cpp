@@ -5,7 +5,7 @@
 
 
 int main() {
-    
+    // Locale Ru
     std::locale::global(std::locale(""));
     
     std::vector<int> numbers; // Создаем пустой вектор
