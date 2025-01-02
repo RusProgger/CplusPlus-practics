@@ -10,23 +10,23 @@ class TimeZone {
 	public:
 		std::string times() {
 
-		// Получаем текущее время 
+		// ГЏГ®Г«ГіГ·Г ГҐГ¬ ГІГҐГЄГіГ№ГҐГҐ ГўГ°ГҐГ¬Гї 
 		auto now = std::chrono::system_clock::now();
 		std::time_t now_time = std::chrono::system_clock::to_time_t(now);
 
-		// Создаем буфер для времени
+		// Г‘Г®Г§Г¤Г ГҐГ¬ ГЎГіГґГҐГ° Г¤Г«Гї ГўГ°ГҐГ¬ГҐГ­ГЁ
 		char time_buffer[26];
 
-		// Преобразуем время в строку в формате времени
+		// ГЏГ°ГҐГ®ГЎГ°Г Г§ГіГҐГ¬ ГўГ°ГҐГ¬Гї Гў Г±ГІГ°Г®ГЄГі Гў ГґГ®Г°Г¬Г ГІГҐ ГўГ°ГҐГ¬ГҐГ­ГЁ
 		if (ctime_s(time_buffer, sizeof(time_buffer), &now_time) != 0) {
-			return "Ошибка получения времени";
+			return "ГЋГёГЁГЎГЄГ  ГЇГ®Г«ГіГ·ГҐГ­ГЁГї ГўГ°ГҐГ¬ГҐГ­ГЁ";
 		}
 
-		// Убираем символ новой строки в конце строки времени
+		// Г“ГЎГЁГ°Г ГҐГ¬ Г±ГЁГ¬ГўГ®Г« Г­Г®ГўГ®Г© Г±ГІГ°Г®ГЄГЁ Гў ГЄГ®Г­Г¶ГҐ Г±ГІГ°Г®ГЄГЁ ГўГ°ГҐГ¬ГҐГ­ГЁ
 		std::string time_str(time_buffer);
 		time_str.pop_back();
 
-		return time_str; // Возвращаем строку времени
+		return time_str; // Г‚Г®Г§ГўГ°Г Г№Г ГҐГ¬ Г±ГІГ°Г®ГЄГі ГўГ°ГҐГ¬ГҐГ­ГЁ
 	}
 };
 
@@ -34,7 +34,7 @@ class User {
 
 	public:
 		void users() {
-			std::cout << "Приветствую! Данная программа является бесплатной." << std::endl;
+			std::cout << "ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ! Г„Г Г­Г­Г Гї ГЇГ°Г®ГЈГ°Г Г¬Г¬Г  ГїГўГ«ГїГҐГІГ±Гї ГЎГҐГ±ГЇГ«Г ГІГ­Г®Г©." << std::endl;
 		}
 };
 
@@ -47,39 +47,40 @@ int main() {
 
 	TimeZone times;
 
-	// создаем переменные для управления: 
+	// Г±Г®Г§Г¤Г ГҐГ¬ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»ГҐ Г¤Г«Гї ГіГЇГ°Г ГўГ«ГҐГ­ГЁГї: 
 	int numb, numb2, numb3;
+	// char integer
 	char keys = 'w';
 
 	User users;
-	users.users(); // приветствие пользователя: 
-	std::cout << "Текущее время: " << times.times() << std::endl; // Текущее время:
+	users.users(); // ГЇГ°ГЁГўГҐГІГ±ГІГўГЁГҐ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї: 
+	std::cout << "Г’ГҐГЄГіГ№ГҐГҐ ГўГ°ГҐГ¬Гї: " << times.times() << std::endl; // Г’ГҐГЄГіГ№ГҐГҐ ГўГ°ГҐГ¬Гї:
 
 	Sleep(1999);
 
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
 
-	std::cout << "Программа для сканирования и уничтожения данных из флешек." << std::endl;
+	std::cout << "ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  Г¤Г«Гї Г±ГЄГ Г­ГЁГ°Г®ГўГ Г­ГЁГї ГЁ ГіГ­ГЁГ·ГІГ®Г¦ГҐГ­ГЁГї Г¤Г Г­Г­Г»Гµ ГЁГ§ ГґГ«ГҐГёГҐГЄ." << std::endl;
 
-	// Сброс по умолчанию
+	// Г‘ГЎГ°Г®Г± ГЇГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
 	SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 
 
-	// Создаем меню
+	// Г‘Г®Г§Г¤Г ГҐГ¬ Г¬ГҐГ­Гѕ
 
-	std::string menuTitle = "Меню";
+	std::string menuTitle = "ГЊГҐГ­Гѕ";
 
-	// Создаем ширину рамки, она будет оформлять наше меню
+	// Г‘Г®Г§Г¤Г ГҐГ¬ ГёГЁГ°ГЁГ­Гі Г°Г Г¬ГЄГЁ, Г®Г­Г  ГЎГіГ¤ГҐГІ Г®ГґГ®Г°Г¬Г«ГїГІГј Г­Г ГёГҐ Г¬ГҐГ­Гѕ
 
-	int width = 30; // Ширина рамки в 30 пикселей
+	int width = 30; // ГГЁГ°ГЁГ­Г  Г°Г Г¬ГЄГЁ Гў 30 ГЇГЁГЄГ±ГҐГ«ГҐГ©
 
 	int titlePadding = (width - menuTitle.length() - 2) / 2;
 
-	// Верхняя граница рамки
+	// Г‚ГҐГ°ГµГ­ГїГї ГЈГ°Г Г­ГЁГ¶Г  Г°Г Г¬ГЄГЁ
 	std::cout << std::string(width, '*') << std::endl;
 
-	// Заголовок
+	// Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ
 	std::cout << '*';
 	std::cout << std::string(titlePadding, ' ') << menuTitle << std::string(titlePadding, ' ');
 	if (menuTitle.length() % 2 != 0) {
@@ -87,10 +88,10 @@ int main() {
 	}
 	std::cout << '*' << std::endl;
 
-	// Нижняя граница рамки
+	// ГЌГЁГ¦Г­ГїГї ГЈГ°Г Г­ГЁГ¶Г  Г°Г Г¬ГЄГЁ
 	std::cout << std::string(width, '*') << std::endl;
 
-	// сюда буду писать проект 
+	// Г±ГѕГ¤Г  ГЎГіГ¤Гі ГЇГЁГ±Г ГІГј ГЇГ°Г®ГҐГЄГІ 
 
 	return 0;
 }
