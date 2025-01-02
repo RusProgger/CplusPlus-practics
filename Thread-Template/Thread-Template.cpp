@@ -39,7 +39,7 @@ int main() {
 	
 	t1.join();
 	t2.join();
-
+	// Output alert
 	std::cout << "Все потоки завершены!" << std::endl;
 
 	return EXIT_SUCCESS;
