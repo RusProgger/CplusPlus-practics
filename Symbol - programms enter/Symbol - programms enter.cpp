@@ -2,11 +2,11 @@
 
 
 int main() {
-
+	// Локализация
 	std::locale::global(std::locale(""));
 
 	// Просим ввод пользователя
-
+	
 	do {
 		char symbol;
 		std::cout << "Введите символ с клавиатуры: ";
