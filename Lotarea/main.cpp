@@ -11,7 +11,7 @@
 int main() {
     // Локализация 
     std::locale::global(std::locale("ru_RU.UTF-8"));
-    
+    // Приветствие для пользователя 
     std::wcout << L"Добро пожаловать в игру лотарею: " << std::endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(1700));
     std::wcout << L"Правила игры: " << std::endl;
