@@ -13,9 +13,9 @@ int main() {
 		std::cout << "Введите символ с клавиатуры: ";
 		// Просим пользователя вести символ
 		std::cin >> symbol;
-
+	
 		std::cout << "Ваш код символа: " << static_cast<int>(symbol) << std::endl;
-	} while (true);
+	} while (true); // цикл будет продолжаться до тех пор пока условие будет true 
 
 	
 
