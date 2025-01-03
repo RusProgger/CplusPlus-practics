@@ -10,6 +10,7 @@ int main() {
     std::locale::global(std::locale());
     setlocale(LC_ALL, "");
 
+    // создаем переменную с типом string
     
     std::wstring name;
     
