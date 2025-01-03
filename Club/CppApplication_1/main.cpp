@@ -5,10 +5,11 @@
 
 int main() {
     
-    // locale 
+    // Установка локализации 
     
     std::locale::global(std::locale());
     setlocale(LC_ALL, "");
+
     
     std::wstring name;
     
