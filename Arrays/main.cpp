@@ -3,7 +3,8 @@
 constexpr int Square(int number) { return number*number;}
 
 int main() {
-    
+
+    // Константа целочисленного типа
     const int ARRAY_LENGTH = 5;
     
     int myNumbers[ARRAY_LENGTH] = {5, 10, 0, -101, 20};
