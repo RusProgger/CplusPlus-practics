@@ -13,7 +13,8 @@ int main() {
     // создаем переменную с типом string
     
     std::wstring name;
-    
+
+    // Просим пользователя ввести имя:
     std::wcout << L"Введите ваше имя: ";
     
     getline(std::wcin, name);
