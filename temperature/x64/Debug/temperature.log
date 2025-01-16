@@ -1,0 +1,3 @@
+﻿  temperature.cpp
+C:\Users\WhoIam\source\repos\temperature\temperature\temperature.cpp(8,9): warning C4101: tempUserF: неиспользованная локальная переменная
+  temperature.vcxproj -> C:\Users\WhoIam\source\repos\temperature\x64\Debug\temperature.exe
