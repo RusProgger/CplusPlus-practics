@@ -16,7 +16,8 @@
 //int main() {
 //
 //	std::locale::global(std::locale(""));
-//
+
+
 //	int numb;
 //
 //	std::cout << "Введите число 1 - 7: ";
