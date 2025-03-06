@@ -17,7 +17,6 @@
 //
 //	std::locale::global(std::locale(""));
 
-
 //	int numb;
 //
 //	std::cout << "Введите число 1 - 7: ";
@@ -55,7 +54,7 @@ enum Week {
 };
 
 int main() {
-    std::setlocale(LC_ALL, "");  // Устанавливаем локаль для вывода русских символов
+    std::setlocale(LC_ALL, "");  
 
 
     for(;;) {
