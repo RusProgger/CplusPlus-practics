@@ -5,7 +5,6 @@
 #include <thread>
 #include <random>
 #include <locale.h>
-#include <vector>
 
 
 int main() {
