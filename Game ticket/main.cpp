@@ -15,7 +15,7 @@ int main() {
     std::cout << "Как тебя зовут? ";
     std::cin >> name;
     
-    // c помощью многопоточности выводим: 
+    // c задержка на 900мс: 
     
     std::this_thread::sleep_for(std::chrono::milliseconds(900));
    
