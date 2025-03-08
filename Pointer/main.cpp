@@ -10,7 +10,7 @@ int main() {
     
     std::cout << *b << std::endl;
     
-    delete b;
+    delete b; // Освобождаем память
     return 0;
 }
 
