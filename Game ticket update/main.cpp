@@ -17,7 +17,7 @@ int main() {
     std::wcout << L"Как тебя зовут? ";
     std::getline(std::wcin, name);
     
-    // c помощью многопоточности выводим: 
+    // Задержка вывода на 900мс: 
     
     std::this_thread::sleep_for(std::chrono::milliseconds(900));
    
