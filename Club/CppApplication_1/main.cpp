@@ -8,6 +8,7 @@ int main() {
     // Установка локализации 
     
     std::locale::global(std::locale());
+    // второй способ подключения
     setlocale(LC_ALL, "");
 
     // создаем переменную с типом string
