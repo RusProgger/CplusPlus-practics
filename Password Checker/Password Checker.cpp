@@ -15,7 +15,7 @@ int main() {
 
 	std::locale::global(std::locale(""));
 
-	// создаем переменную для ввода пароля
+	
 
 	std::string password;
 
