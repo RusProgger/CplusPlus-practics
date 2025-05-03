@@ -7,7 +7,7 @@ int main() {
    
     int width;
 
-    std::cout << "Установите ширину таллицы: ";
+    std::cout << "Установите ширину таблицы: ";
 
     std::cin >> width;
 
