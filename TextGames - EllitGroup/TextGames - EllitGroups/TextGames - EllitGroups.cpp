@@ -27,6 +27,14 @@ void MainMenu() {
 	std::cout << termcolor::bright_cyan << "2 - Выйти:" << termcolor::reset << std::endl;
 }
 
+void Ask1() {
+	std::cout << std::endl;
+	std::cout << termcolor::bright_cyan << "1- Зайдете через окно." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "2- Зайдете через парадную." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "3- Зайдете через главный вход." << termcolor::reset << std::endl;
+}
+
+
 int main() {
 
 	// Локализация
@@ -59,23 +67,46 @@ int main() {
 			// mainmenu будет появляться после того как пользователь прошел проверку на ввод правильных данных
 
 			MainMenu();
+			int asking;
 			std::cin >> enterNumber;
 			switch (enterNumber) {
 			case 1: 
 				std::cout << "Вы внедряетесь в корпорацию, и ваша задача уничтожить документы что вы сделаете?\n";
 
 				// список ответов
+				Ask1();
+				std::cin >> asking;
+				switch (asking) {
+				case 1:
+					std::cout << termcolor::bright_cyan << "Ужас вы зашли через окно." << termcolor::reset << std::endl;
+					std::cout << termcolor::red << "Вас обнаружили." << --counter << termcolor::reset << std::endl;
+					break;
+
+				case 2:
+					std::cout << termcolor::bright_cyan << "Неплохо. Вы зашли через парадную и вас чуть не обнаружили." << termcolor::reset << std::endl;
+					std::cout << termcolor::yellow << "Пронесло." << ++counter << termcolor::reset << std::endl;
+					break;
+
+				case 3:
+					std::cout << termcolor::bright_cyan << "Как ни странно охраны нет, мы успешно вошли в здание." << termcolor::reset << std::endl;
+					std::cout << termcolor::green << "Вас не обнаружили." << (counter += 20) << termcolor::reset << std::endl;
+					break;
+				}
+
+				
+
 				break;
 
 			case 2:
 				std::cout << termcolor::red << "Вы завершили игру, ваш счет: " << counter << std::endl;
 				break;
+
+			default:
+				std::cout << "Неверное значение." << std::endl;
 			}
 			
 
-
-
-
+			
 			break;
 		}
 		else {
@@ -84,8 +115,6 @@ int main() {
 		}
 
 	}
-
-
 
 	system("pause > 0");
 	return 0;
