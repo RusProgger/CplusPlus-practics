@@ -9,7 +9,7 @@ template <typename T>
 }
 
 int main() {
-
+    // Локализация
     std::locale::global(std::locale(""));
 
     int result_int = add(20, 15);
