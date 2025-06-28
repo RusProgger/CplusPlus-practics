@@ -30,6 +30,7 @@ int main() {
 
     // Генерация случайных чисел
     int random_number = dis(gen);
+    // Условие 
     if(random_number == 55) {
         std::wcout << L"Привет " << name << L" твой код " <<  random_number << L" ты выиграл!" << std::endl;
     } else {
