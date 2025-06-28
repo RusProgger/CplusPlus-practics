@@ -11,7 +11,7 @@ int main() {
     // Локализация 
     std::locale::global(std::locale("ru_RU.UTF-8"));
     
-    
+    // Создаем переменную с типом STRING 
     std::wstring name;
     
     std::wcout << L"Как тебя зовут? ";
