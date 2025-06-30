@@ -1,0 +1,152 @@
+﻿#include <iostream>
+#include <vector>
+#include <string>
+#include <cctype> 
+#include "color.h"
+
+
+// Проверка на ввод коректный данных 
+
+bool PlayerName(const std::string& str) {
+	for (char ch : str) {
+		if (!std::isalpha(static_cast<unsigned char>(ch))) {
+			return false;
+		}
+	}
+	return true;
+}
+
+// Главное меню
+
+void MainMenu() {
+	std::cout << std::endl;
+	std::cout << termcolor::bright_cyan << "-----------Главное меню-----------" << termcolor::reset << std::endl;
+	std::cout << std::endl;
+
+	std::cout << termcolor::bright_cyan << "1 - Начать игру:" << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "2 - Выйти:" << termcolor::reset << std::endl;
+}
+
+void Ask1() {
+	std::cout << std::endl;
+	std::cout << termcolor::bright_cyan << "1- Зайдете через окно." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "2- Зайдете через парадную." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "3- Зайдете через главный вход." << termcolor::reset << std::endl;
+}
+
+void Ask2() {
+	std::cout << std::endl;
+	std::cout << termcolor::bright_cyan << "1- Вас обнаружили. Вы видите на столе ноутбук. Вы скачиваете файлы." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "2- Вас чуть не обнаружили. Вы видите ноутбук но проходите мимо." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "3- Как ни странно охраны нет, вы идете в глубь здания.\nИ видите стоящего охранника, вы его нейтрализуете и забираете ключ от секретной лаборатории." << termcolor::reset << std::endl;
+}
+
+
+int main() {
+
+	// Локализация
+	std::locale::global(std::locale(""));
+
+	
+	int enterNumber; // для меню
+	int counter = 0;
+	std::string name; // Для ввода имени
+
+	// Приветствие
+	std::cout << termcolor::bright_cyan << "Добро пожаловать в игру EllitGroups." << termcolor::reset << std::endl;
+	std::cout << termcolor::bright_cyan << "Вы элитный боец спецназа. Ваша задача найти и уничтожить кейс с документами." << termcolor::reset << std::endl;
+
+
+	// цикл для повторного ввода имени
+
+	while (true) {
+
+		// Запрашиваем имя: 
+
+		std::cout << termcolor::green << "Введите ваше имя: ";
+		std::getline(std::cin, name);
+
+		// Проверка 
+
+		if (PlayerName(name)) {
+			std::cout << termcolor::green << "Привет, " << name << termcolor::reset << std::endl;
+
+			// mainmenu будет появляться после того как пользователь прошел проверку на ввод правильных данных
+
+			MainMenu();
+			int asking;
+			std::cin >> enterNumber;
+			switch (enterNumber) {
+			case 1: 
+				std::cout << "Вы внедряетесь в корпорацию, и ваша задача уничтожить документы что вы сделаете?\n";
+
+				// список ответов
+				Ask1();
+				std::cin >> asking;
+				switch (asking) {
+				case 1:
+					std::cout << termcolor::bright_cyan << "Ужас вы зашли через окно." << termcolor::reset << std::endl;
+					std::cout << termcolor::red << "Вас обнаружили." << "Вы заработали " << --counter << termcolor::reset << std::endl;
+
+					Ask2();
+					std::cin >> asking;
+					switch (asking) {
+					case 1: 
+						std::cout << termcolor::red << "Вы скачиваете файлы в обнаруженном виде." << "Вы заработали " << (counter - 20) << termcolor::reset << std::endl;
+						break;
+					}
+
+					break;
+
+				case 2:
+					std::cout << termcolor::bright_cyan << "Неплохо. Вы зашли через парадную и вас чуть не обнаружили." << termcolor::reset << std::endl;
+					std::cout << termcolor::yellow << "Пронесло." << "Вы заработали " << ++counter << termcolor::reset << std::endl;
+
+					Ask2();
+					std::cin >> asking;
+					switch (asking) {
+					case 2:
+						std::cout << termcolor::green << "Вас не обнаружили." << "Вы заработали " << (counter += 15) << termcolor::reset << std::endl;
+						break;
+					}
+
+					break;
+
+				case 3:
+					std::cout << termcolor::bright_cyan << "Как ни странно охраны нет, мы успешно вошли в здание." << termcolor::reset << std::endl;
+					std::cout << termcolor::green << "Вас не обнаружили." << "Вы заработали " << (counter += 20) << termcolor::reset << std::endl;
+
+					Ask2();
+					std::cin >> asking;
+					switch (asking) {
+					case 3:
+						std::cout << termcolor::green << "Внутри здания стоит охранник спиной, вы его нейтрализируете и забираете ключ от секретной лаборатории." << "Вы заработали " << (counter += 50) << termcolor::reset << std::endl;
+						break;
+					}
+
+					break;
+				}
+
+				break;
+
+			case 2:
+				std::cout << termcolor::red << "Вы завершили игру, ваш счет: " << counter << std::endl;
+				break;
+
+			default:
+				std::cout << "Неверное значение." << std::endl;
+			}
+			
+			
+			break;
+		}
+		else {
+			std::cout << termcolor::red << "Ошибка: имя должно содержать только буквы!" << termcolor::reset << std::endl;
+			
+		}
+
+	}
+
+	std::cin.get();
+	return 0;
+}
