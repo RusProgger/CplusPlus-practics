@@ -16,9 +16,8 @@ int main() {
         std::cout << numberB;
     }
     
-    
     std::cin.get();
-    
-    
 
+    return 0;
+    
 }
