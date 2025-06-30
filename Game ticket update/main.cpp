@@ -18,11 +18,9 @@ int main() {
     std::getline(std::wcin, name);
     
     // Задержка вывода на 900мс: 
-    
     std::this_thread::sleep_for(std::chrono::milliseconds(900));
    
     // Выводим вводимые данные в name;
-    
     
     std::random_device rd;  // Источник случайной энтропии (может не быть доступным на всех платформах)
     std::mt19937 gen(rd()); // Используем Mersenne Twister 19937 в качестве генератора
