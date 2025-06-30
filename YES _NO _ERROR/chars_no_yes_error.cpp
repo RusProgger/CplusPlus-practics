@@ -33,5 +33,6 @@ int main() {
         std::cout << "ERROR";
     }
 
+    return 0;
 
 }
