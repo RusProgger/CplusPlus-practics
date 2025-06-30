@@ -25,5 +25,6 @@ int main() {
         std::cout << "no";
     }
 
+    std::cin.get();
     return 0;     
 }
