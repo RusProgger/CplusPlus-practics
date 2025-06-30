@@ -1,17 +1,16 @@
 include <iostream>
 #include <string>
-using namespace std;
 
 int main() {
     // ввод напитка: "чай" или "кофе"
-	string drink;
-	cin >> drink;
+	std::string drink;
+	std::cin >> drink;
 
 	if (drink == "чай") 
 	{
         // ввод типа чая: "черный" или "зеленый"
-        string tea_type;
-        cin >> tea_type;
+        std::string tea_type;
+        std::cin >> tea_type;
 
         if (tea_type == "черный") 
 		{
@@ -26,8 +25,8 @@ int main() {
 	if (drink == "кофе") 
 	{
         // ввод типа кофе: "эспрессо" или "латте"
-        string coffee_type;
-        cin >> coffee_type; 
+        std::string coffee_type;
+        std::cin >> coffee_type; 
 
         if (coffee_type == "эспрессо") 
 		{
