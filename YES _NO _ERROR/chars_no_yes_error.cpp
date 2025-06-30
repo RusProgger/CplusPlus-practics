@@ -33,6 +33,7 @@ int main() {
         std::cout << "ERROR";
     }
 
+    std::cin.get();
     return 0;
 
 }
