@@ -26,5 +26,7 @@ int main() {
     } else {
         std::cout << "Ошибка";
     }
+
+    return 0;
     
 }
