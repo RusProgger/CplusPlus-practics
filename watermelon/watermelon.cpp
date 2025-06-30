@@ -18,6 +18,7 @@ int main() {
 
         std::cout << "Промах";
     }
-    
+
+    std::cin.get();
     return 0;
 }
