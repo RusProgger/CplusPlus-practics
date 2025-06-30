@@ -19,5 +19,5 @@ int main() {
         std::cout << "Промах";
     }
     
-
+    return 0;
 }
