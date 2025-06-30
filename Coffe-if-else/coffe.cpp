@@ -37,6 +37,6 @@ int main() {
 			std::cout << "Ваш кофе латте готов";
 		}        
 	}
-	
+	std::cin.get();
 	return 0;
 }
