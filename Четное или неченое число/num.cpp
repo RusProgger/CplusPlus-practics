@@ -27,6 +27,7 @@ int main() {
         std::cout << "Ошибка";
     }
 
+    std::cin.get();
     return 0;
     
 }
