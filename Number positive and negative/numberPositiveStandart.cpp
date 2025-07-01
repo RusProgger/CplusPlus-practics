@@ -15,4 +15,6 @@ int main() {
         std::cin >> i;
         }
     std::cout << "Положительных: " << p << std::endl << "Отрицательных: " << n;
+
+    return 0;
 }
