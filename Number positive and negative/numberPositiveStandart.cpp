@@ -16,5 +16,7 @@ int main() {
         }
     std::cout << "Положительных: " << p << std::endl << "Отрицательных: " << n;
 
+    std::cin.get();
+
     return 0;
 }
