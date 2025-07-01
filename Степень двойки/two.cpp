@@ -22,6 +22,8 @@ int main() {
         n *= 2;
     }
 
+    std::cin.get();
+
     return 0;
 }
 
