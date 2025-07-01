@@ -21,5 +21,7 @@ int main() {
         std::cout << n << " ";
         n *= 2;
     }
+
+    return 0;
 }
 
