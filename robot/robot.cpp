@@ -11,5 +11,7 @@ int main() {
     
     std::cout << "Ура, Добби свободен!";
 
+    std::cin.get();
+
     return 0;
 }
