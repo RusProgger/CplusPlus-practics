@@ -14,7 +14,7 @@ int main() {
 
 	// Лоакализация для русского языка
 
-	std::locale::global(std::locale(""));
+	// std::locale::global(std::locale(""));
 
 	
 
