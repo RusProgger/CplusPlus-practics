@@ -102,8 +102,6 @@ int main() {
 	std::cin.get();
 #endif // _WIN32
 
-
-
 	return EXIT_SUCCESS;
 }
 
