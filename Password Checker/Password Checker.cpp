@@ -3,6 +3,7 @@
 #include <cctype>
 #include <thread>
 #include <chrono>
+#include <locale>
 
 // Подключает свой файл цветов для проекта
 
