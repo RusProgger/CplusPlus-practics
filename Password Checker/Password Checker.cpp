@@ -16,7 +16,7 @@ int main() {
 
 	// std::locale::global(std::locale(""));
 
-	
+	setlocale(LC_ALL, "Ru");
 
 	std::string password;
 
