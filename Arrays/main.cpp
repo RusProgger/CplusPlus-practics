@@ -25,7 +25,6 @@ int main() {
     myNumbers[elementIndex] = newValue;
     moreNumbers[elementIndex] = newValue;
     
-    
     std::cout << "Элемент " << elementIndex << " MyNumber равен: ";
     std::cout <<  myNumbers[elementIndex];
     
