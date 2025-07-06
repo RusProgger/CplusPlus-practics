@@ -65,7 +65,7 @@ int main() {
 	} while (tempUserNumb != 0);
 
 	
-	system("pause");
+	std::cin.get();
 	return 0;
 
 }
