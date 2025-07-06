@@ -45,6 +45,8 @@ int main() {
 
     // system("pause);
 
+    std::cin.get();
+
     return 0;
 
 }
