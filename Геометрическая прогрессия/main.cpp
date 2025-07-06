@@ -24,7 +24,7 @@ int main() {
         num *= 2;
     }
 
-    
+    std::cin.get();
     return 0;
 
 }
