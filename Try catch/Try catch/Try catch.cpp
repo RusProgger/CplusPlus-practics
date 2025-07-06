@@ -21,6 +21,7 @@ int main() {
         std::cout << "Ошибка!!" << std::endl;
     }
 
+    return 0;
 
 }
 
