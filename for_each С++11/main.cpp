@@ -40,4 +40,6 @@ int main() {
         std::cout << name_count << " ";
      });
 
+     return 0;
+
 }
