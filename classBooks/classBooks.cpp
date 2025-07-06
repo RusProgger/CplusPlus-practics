@@ -30,5 +30,7 @@ int main()
 	programming.get_result(2020, "Системное программирование");
 	/*programming.get_info();*/
 
+	return 0;
+
 }
 
