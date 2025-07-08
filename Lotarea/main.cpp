@@ -35,6 +35,7 @@ int main() {
     // проверка если имя пустое то:
     if(name.empty()) {
         std::wcout << L"Имя не может быть пустым\n";
+        std::wcout << L"Повторите попытку еще раз.\n";
     }
     
     }while(name.empty());
