@@ -92,6 +92,6 @@ int main() {
 	std::cout << std::string(width, '*') << std::endl;
 
 	// ñþäà áóäó ïèñàòü ïðîåêò 
-
+	std::cin.get();
 	return 0;
 }
