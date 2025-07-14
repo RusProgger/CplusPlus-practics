@@ -20,7 +20,7 @@ int main() {
     // Выводим имя: 
     getline(std::wcin, name);
     
-    
+    // Задержка 
     
     std::cin.get();
     
