@@ -19,4 +19,6 @@ int main() {
     
     delete[] arr;
     arr = nullptr;
+
+    return 0;
 }
