@@ -54,6 +54,6 @@ int main() {
     }
 
     counter.printResult();
-
+    std::cin.get();
     return 0;
 }
