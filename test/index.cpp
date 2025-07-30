@@ -1,11 +1,15 @@
 #include <iostream> 
 #include <string>
+#include <locale.h>
 
 int main() {
+   std::locale::global(std::locale("Russian"));
+   std::string name;
+   int password;
+   std::cin >> name;
+   std::cin >> password;
 
-    int a {0};
-    std::cout << a << std::endl;
+   if(name != "Alex" && password != 8871) {
 
-    std::cin.get();
-    return 0;
+   }
 }
