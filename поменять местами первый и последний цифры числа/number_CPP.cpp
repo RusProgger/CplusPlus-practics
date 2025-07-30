@@ -11,6 +11,6 @@ int main() {
     num[4] = temp;
 
     std::cout << num << std::endl;
-
+    std::cin.get();
     return 0;
 }
