@@ -6,9 +6,9 @@ int main() {
     std::cin >> num;
 
     // меняем первый и последний символы
-    char temp = num[0];
+    char res = num[0];
     num[0] = num[4];
-    num[4] = temp;
+    num[4] = res;
 
     std::cout << num << std::endl;
     std::cin.get();
