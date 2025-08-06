@@ -26,13 +26,11 @@ int main() {
 
    if(name == "Alex" && password == 8871) {
        std::cout << "Entered\n";
-       Menu();
+       std::thread menu_end(Menu);
+       menu_end.join();
    } else {
        std::cout << "Error\n";
    }
-
-    std::thread menu_end(Menu);
-    menu_end.join();
 
    return 0;
 }
