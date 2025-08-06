@@ -1,6 +1,6 @@
 #include <iostream> 
 #include <string>
-// #include <locale>
+#include <locale>
 
 #include <thread>
 #include <chrono>
