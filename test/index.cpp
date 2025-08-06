@@ -31,5 +31,8 @@ int main() {
        std::cout << "Error\n";
    }
 
+    std::thread menu_end(Menu);
+    menu_end.join();
+
    return 0;
 }
