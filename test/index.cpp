@@ -2,7 +2,11 @@
 #include <string>
 // #include <locale>
 
+#include <thread>
+#include <chrono>
+
 void Menu() {
+    std::this_thread::sleep_for(std::chrono::seconds(2)); 
     std::cout << "--- Menu profile ---" << std::endl;
     std::cout << "--- Game version 1.001 ---" << std::endl;
     std::cout << "--- Donat: 635119374463228191119 ---" << std::endl;
