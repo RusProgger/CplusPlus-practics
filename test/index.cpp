@@ -6,7 +6,6 @@ void Menu() {
     std::cout << "--- Menu profile ---" << std::endl;
     std::cout << "--- Game version 1.001 ---" << std::endl;
     std::cout << "--- Donat: 635119374463228191119 ---" << std::endl;
-    std::cout << "--- Exit - 0: ---" << std::endl;
 }
 
 int main() {
@@ -20,11 +19,11 @@ int main() {
    std::cout << "Enter password: ";
    std::cin >> password;
 
-   if(name != "Alex" && password != 8871) {
-       std::cout << "Error\n";
+   if(name == "Alex" && password == 8871) {
+       std::cout << "Entered\n";
+       Menu();
    } else {
-        std::cout << "Entered\n";
-        Menu();
+       std::cout << "Error\n";
    }
 
    return 0;
