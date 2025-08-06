@@ -6,6 +6,7 @@ void Menu() {
     std::cout << "--- Menu profile ---" << std::endl;
     std::cout << "--- Game version 1.001 ---" << std::endl;
     std::cout << "--- Donat: 635119374463228191119 ---" << std::endl;
+    std::cout << "--- Exit - 0: ---" << std::endl;
 }
 
 int main() {
