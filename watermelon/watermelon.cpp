@@ -14,6 +14,7 @@ int main() {
     // Вводим координаты
     std::cin >> numberX >> numberY;
     
+    // Проверка 
     if((numberX >= 100 && numberX <= 200) && (numberY >= 50 && numberY <= 150)) {
         std::cout << "Попал";
     } else {
