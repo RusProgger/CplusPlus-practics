@@ -10,6 +10,8 @@
 int main() {
     // Переменные для Х и Y
     int numberX, numberY;
+
+    // Вводим координаты
     std::cin >> numberX >> numberY;
     
     if((numberX >= 100 && numberX <= 200) && (numberY >= 50 && numberY <= 150)) {
