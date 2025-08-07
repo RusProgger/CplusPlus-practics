@@ -8,7 +8,7 @@
 */
 
 int main() {
-    
+    // Переменные для Х и Y
     int numberX, numberY;
     std::cin >> numberX >> numberY;
     
