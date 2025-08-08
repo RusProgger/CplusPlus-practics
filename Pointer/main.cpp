@@ -11,6 +11,7 @@ int main() {
     std::cout << *b << std::endl;
     
     delete b; // Освобождаем память
+    b = nullptr;
     return 0;
 }
 
