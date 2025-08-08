@@ -41,6 +41,7 @@ int main() {
 	} while (a != b);
 
 	std::cout << GREEN << "Ваш ответ правильный! " << RESET << std::endl;
+	std::cout << GREEN << "Молодец " << RESET << std::endl;
 
 
 	// Задержка консоли на разных ОС
