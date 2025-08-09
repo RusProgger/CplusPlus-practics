@@ -9,6 +9,7 @@ int main() {
     b = &a;
     
     std::cout << *b << std::endl;
+    std::cout << &b << std::endl;
     
     delete b; // Освобождаем память
     b = nullptr;
