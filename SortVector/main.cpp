@@ -32,7 +32,7 @@ int main() {
         std::cout << "Индекс: " << i << ", Значение: " << numbers[i] << std::endl;
     }
     
-    
+    std::cin.get();
     // system("pause");
     return 0;
 }
