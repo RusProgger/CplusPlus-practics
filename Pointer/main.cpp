@@ -14,7 +14,7 @@ int main() {
     delete b; // Освобождаем память
     b = nullptr;
 
-    
+    std::cin.get();
     return 0;
 }
 
