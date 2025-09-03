@@ -13,6 +13,7 @@ int main() {
     
     delete b; // Освобождаем память
     b = nullptr;
+
     
     return 0;
 }
