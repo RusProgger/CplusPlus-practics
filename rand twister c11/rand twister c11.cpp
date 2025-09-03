@@ -39,6 +39,6 @@ int main() {
 	std::cin.get();
 #endif // _WIN32
 
-
+	std::cin.get();
 	return EXIT_SUCCESS;
 }
