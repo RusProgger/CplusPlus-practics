@@ -59,9 +59,6 @@ int main() {
     std::cout << GREEN << "Найменьшее число ";
     std::cout << RED << min_result << RESET;
 
-      
-
-    
     
 }
     
