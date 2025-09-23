@@ -17,8 +17,16 @@ class User {
 
 int main() {
 
+    // Создаем обьект класса для класса User
+    User userInfo;
 
+    // заполняем поля 
 
+    userInfo.name = "Alex";
+    userInfo.age = 30;
+
+    // вывод информации
+    userInfo.funct();
 
     return 0;
 }
