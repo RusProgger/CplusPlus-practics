@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "mainClassBank.h"
+#include <server.h>
 
 class User {
     // определяем класс
