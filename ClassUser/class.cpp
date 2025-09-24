@@ -38,7 +38,10 @@ int main() {
     bankinfo.name = "Denis";
     bankinfo.balance = 5455.32;
 
-    
+    // вывод информации
+
+    std::cout << "Name: " << bankinfo.name << std::endl;
+    std::cout << "Balance: " << bankinfo.balance << "grn " << std::endl;
 
     return 0;
 }
