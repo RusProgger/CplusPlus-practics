@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "mainClassBank.h"
 
 class User {
     // определяем класс
@@ -20,6 +21,8 @@ int main() {
 
     // Создаем обьект класса для класса User
     User userInfo;
+
+    // Cоздаем обьект класса для класса Bank
 
     // заполняем поля 
 
