@@ -56,7 +56,7 @@ int main() {
     std::cout << "--------------- Info Server ---------------" << std::endl;
 
     server.serverInfo = "Digit";
-    server.ipAdress = "133.12.15.105";
+    server.ipAddress = "133.12.15.105";
 
     // вывод информации о сервере
 
