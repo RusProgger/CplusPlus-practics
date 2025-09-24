@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "mainClassBank.h"
-#include <server.h>
+#include "server.h"
+
 
 class User {
     // определяем класс
@@ -26,6 +27,8 @@ int main() {
     // Cоздаем обьект класса для класса Bank
 
     Bank bankinfo;
+
+    Server server;
     // заполняем поля 
 
     userInfo.name = "Alex";
@@ -48,6 +51,16 @@ int main() {
 
     bankinfo.InfoBank();
 
+    std::cout << std::endl;
+
+    std::cout << "--------------- Info Server ---------------" << std::endl;
+
+    server.serverInfo = "Digit";
+    server.ipAdress = "133.12.15.105";
+
+    // вывод информации о сервере
+
+    server.ServerInformation();
 
     return 0;
 }
