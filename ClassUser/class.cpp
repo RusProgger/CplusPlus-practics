@@ -24,6 +24,7 @@ int main() {
 
     // Cоздаем обьект класса для класса Bank
 
+    Bank bankinfo;
     // заполняем поля 
 
     userInfo.name = "Alex";
@@ -31,6 +32,13 @@ int main() {
 
     // вывод информации
     userInfo.funct();
+
+    std::cout << "--------------- Info Bank ---------------" << std::endl;
+
+    bankinfo.name = "Denis";
+    bankinfo.balance = 5455.32;
+
+    
 
     return 0;
 }
