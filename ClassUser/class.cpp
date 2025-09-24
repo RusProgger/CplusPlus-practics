@@ -10,7 +10,7 @@ class User {
 
         // выводим информацию 
 
-        void funct() {
+        void dataInfo() {
             std::cout << "Name: " << name << std::endl;
             std::cout << "Age: " << age << std::endl;
         }
@@ -31,17 +31,22 @@ int main() {
     userInfo.age = 30;
 
     // вывод информации
-    userInfo.funct();
+    userInfo.dataInfo();
 
     std::cout << "--------------- Info Bank ---------------" << std::endl;
 
-    bankinfo.name = "Denis";
-    bankinfo.balance = 5455.32;
+    bankinfo.nameUser = "Denis";
+    bankinfo.balanceUser = 5455.32;
 
     // вывод информации
 
+    /*
     std::cout << "Name: " << bankinfo.name << std::endl;
-    std::cout << "Balance: " << bankinfo.balance << "grn " << std::endl;
+    std::cout << "Balance: " << bankinfo.balance << " grn " << std::endl;
+    */
+
+    bankinfo.InfoBank();
+
 
     return 0;
 }
