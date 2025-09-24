@@ -21,7 +21,7 @@ class Server {
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         std::cout << "Server: " << std::setw(5) << serverInfo << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(1500));
-        std::cout << "ipAddress : " << std::setw(5) << ipAddress << std::endl;
+        std::cout << "ipAddress: " << std::setw(5) << ipAddress << std::endl;
     }
 
 };
