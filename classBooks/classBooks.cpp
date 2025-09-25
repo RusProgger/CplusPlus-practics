@@ -30,6 +30,8 @@ int main()
 	programming.get_result(2020, "Системное программирование");
 	/*programming.get_info();*/
 
+
+	std::cin.get();
 	return 0;
 
 }
