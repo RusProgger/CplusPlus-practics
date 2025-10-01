@@ -16,7 +16,7 @@ int main() {
 
 
     for(int j = 0; j < numberVector; j++) {
-        std::cout << "Number element vector: " << j << v[j] << std::endl; 
+        std::cout << "Number element vector: " << j << " = " << v[j] << std::endl; 
     }
 
     std::cout << "Count vector: " << numberVector << std::endl;
