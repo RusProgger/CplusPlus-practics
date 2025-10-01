@@ -9,8 +9,8 @@ int main() {
 
     std::vector <int> v(numberVector);
 
-    for(int i = 1; i < numberVector; i++) {
-        std::cout << "Enter vector number: ";
+    for(int i = 0; i < numberVector; i++) {
+        std::cout << "Enter vector number " << i << ": ";
         std::cin >> v[i];
     }
 
