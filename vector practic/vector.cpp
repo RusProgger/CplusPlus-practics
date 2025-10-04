@@ -12,7 +12,7 @@ int main() {
 
     for(int i = 0; i < number; i++) {
         int var; 
-        
+        std::cout << "Number: ";
         std::cin >> var;
         numberEnter.push_back(var);
     }
