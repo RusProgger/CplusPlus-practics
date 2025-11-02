@@ -5,15 +5,15 @@ void numberInt(int n) {
 }
 
 void numberInt(float n) {
-    std::cout << "Number: " << n << std::endl;
+    std::cout << "Number float: " << n << std::endl;
 }
 
 void numberInt(double n) {
-    std::cout << "Number: " << n << std::endl;
+    std::cout << "Number double: " << n << std::endl;
 }
 
 void numberInt(std::string n) {
-    std::cout << "Number: " << n << std::endl;
+    std::cout << "String: " << n << std::endl;
 }
 
 
