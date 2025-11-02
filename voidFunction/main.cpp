@@ -4,7 +4,7 @@ void numberInt(int n) {
     std::cout << "Number: " << n << std::endl;
 }
 
-void numberInt(float n) {
+void numberFloat(float n) {
     std::cout << "Number float: " << n << std::endl;
 }
 
@@ -20,7 +20,9 @@ void numberInt(std::string n) {
 int main() {
 
     numberInt(100);
-
+    numberFloat(44.66);
+    numberInt(100.3577);
+    numberInt("Alex");
 
     return 0;
 }
