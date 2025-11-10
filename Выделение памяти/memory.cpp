@@ -3,8 +3,6 @@
 #include <stdlib.h>
 #include <iostream>
 
-
-
 int main() {
 
     const int num = 5;
