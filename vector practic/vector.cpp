@@ -32,6 +32,8 @@ int main() {
 
     std::sort(numberEnter.begin(), numberEnter.end());
 
+    std::cout << "---------- Отсортированный вектор ----------" << "\n";
+
      for(int j = 0; j < number; j++) {
         std::cout << "Vector " << j << " = " << numberEnter[j] << "\n";
     }
