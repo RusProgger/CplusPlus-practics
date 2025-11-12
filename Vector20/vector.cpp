@@ -4,7 +4,7 @@
 template <typename T>
 
 void out_vector(const std::vector<T>& vector_user) {
-    for(size_t i{}; i < vector_user; i++) {
+    for(size_t i{}; i < vector_user.size(); i++) {
         std::cout << vector_user[i] << " ";
     }
 
