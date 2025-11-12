@@ -18,9 +18,6 @@ int main() {
         std::cout << "Вывод массива: " << arr[i] << std::endl;
     }
 
-    
-    
-
     // создание вектора с типом string
 
     std::vector<std::string> name {"Alex", "Dmitriy", "Ivan", "Kirill", "Denis"};
