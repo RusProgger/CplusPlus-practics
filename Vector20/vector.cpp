@@ -23,7 +23,8 @@ int main() {
 
     std::cout << "Vector user male: " << vect[0] << " " << vect[2] << std::endl;
 
-    out_vector(vect);
+    std::cout << "User: ";
+    out_vector(vect1);
 
     std::cin.get();
     return 0;
