@@ -17,7 +17,7 @@ int main() {
     // Тут дописать вектор user с именами пользователя.
 
     std::vector<std::string> vect {"Ivan", "Irina", "Denis", "Alena", "Julia"};
-    std::vector<std::string> vect1 {"Ivan", "Irina", "Denis", "Alena", "Julia"};
+    std::vector<std::string> vect1 {"Kirill", "Maxim", "Marina", "Victor", "Alex"};
 
     // вывод вектора 
 
