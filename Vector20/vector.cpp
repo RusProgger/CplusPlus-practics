@@ -20,8 +20,10 @@ int main() {
 
     // вывод вектора 
 
-    std::cout << "Vector user male: " << vect[0] << vect[2] << " ";
-    
+    std::cout << "Vector user male: " << vect[0] << " " << vect[2] << std::endl;
+
+    out_vector(vect);
+
     std::cin.get();
     return 0;
 }
