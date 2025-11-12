@@ -1,10 +1,5 @@
 #include <iostream>
 
-
-
-
-
-
 int main() {
     // Подключаем локализацию
     std::locale::global(std::locale(""));
