@@ -8,5 +8,9 @@ int main() {
 
     
     delete num;
+    
+    // очищаем висячий указатель
+
+    num = nullptr;
     return 0;
 }
