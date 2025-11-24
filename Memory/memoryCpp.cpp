@@ -21,6 +21,10 @@ int main() {
         strings[i] = "Hello";
     }
 
+    for(int i = 0; i < 5; i++) {
+        std::cout << strings[i] << std::endl;
+    }
+
     // Освобождаем память
 
     delete[] strings;
