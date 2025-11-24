@@ -25,6 +25,8 @@ int main() {
 
     delete[] strings;
 
+    // Очищаем указатель
 
+    strings = nullptr;
     return 0;
 }
