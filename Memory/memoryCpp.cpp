@@ -15,7 +15,16 @@ int main() {
 
     std::string* strings = new std::string[5];
 
-    
+    // цикл
+
+    for(int i = 0; i < 5; i++) {
+        strings[i] = "Hello";
+    }
+
+    // Освобождаем память
+
+    delete[] strings;
+
 
     return 0;
 }
