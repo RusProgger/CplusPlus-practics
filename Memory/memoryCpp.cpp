@@ -2,8 +2,11 @@
 
 int main() {
 
+   int* num = new int;
+   *num = 100;
+   std::cout << *num << std::endl;
+
     
-
-
+    delete num;
     return 0;
 }
