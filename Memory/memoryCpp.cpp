@@ -17,11 +17,11 @@ int main() {
 
     // цикл
 
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 10; i++) {
         strings[i] = "Hello";
     }
 
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 10; i++) {
         std::cout << strings[i] << std::endl;
     }
 
