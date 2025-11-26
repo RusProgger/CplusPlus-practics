@@ -13,7 +13,7 @@ int main() {
 
     // num = nullptr;
 
-    std::string* strings = new std::string[5];
+    std::string* strings = new std::string[10];
 
     // цикл
 
