@@ -4,6 +4,7 @@
 class Person {
 private:
 	std::string name;
+	std::string last_name;
 	unsigned short age{};
 	bool isMarried;
 	std::string city;
