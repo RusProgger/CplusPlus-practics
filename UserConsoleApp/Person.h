@@ -4,14 +4,15 @@
 class Person {
 private:
 	std::string name;
-	std::string last_name;
+	std::string lastName;
 	unsigned short age{};
 	bool isMarried;
 	std::string city;
 	std::string profession;
 
 public:
-	Person(const std::string& name, 
+	Person(const std::string& name,
+		const std::string& lastName,
 		unsigned short age, 
 		bool isMarried, 
 		const std::string& city, 
