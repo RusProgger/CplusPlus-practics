@@ -16,7 +16,8 @@ public:
 		unsigned short age, 
 		bool isMarried, 
 		const std::string& city, 
-		const std::string& profession) :
+		const std::string& profession,
+		const std::string& myMusic) :
 
 		name(name),
 		age(age),
