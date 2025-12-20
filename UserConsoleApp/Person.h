@@ -9,6 +9,7 @@ private:
 	bool isMarried;
 	std::string city;
 	std::string profession;
+	std::string myMusic;
 
 public:
 	Person(const std::string& name,
