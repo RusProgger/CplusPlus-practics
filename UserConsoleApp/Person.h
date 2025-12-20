@@ -26,7 +26,7 @@ public:
 		city(city),
 		profession(profession),
 		myMusic(myMusic) {
-	}
+	};
 
 	void printInfoUser() const;
 };
