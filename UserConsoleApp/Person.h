@@ -23,7 +23,8 @@ public:
 		age(age),
 		isMarried(isMarried),
 		city(city),
-		profession(profession,) {
+		profession(profession),
+		myMusic(myMusic) {
 	}
 
 	void printInfoUser() const;
