@@ -21,6 +21,7 @@ public:
 		const std::string& myMusic = "") :
 
 		name(name),
+		lastName(lastName),
 		age(age),
 		isMarried(isMarried),
 		city(city),
