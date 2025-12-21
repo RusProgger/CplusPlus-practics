@@ -14,9 +14,9 @@ private:
 public:
 	Person(const std::string& name,
 		const std::string& lastName = "",
-		unsigned short age, 
-		bool isMarried, 
-		const std::string& city, 
+		unsigned short age = 0, 
+		bool isMarried = false, 
+		const std::string& city = "",
 		const std::string& profession = "",
 		const std::string& myMusic = "") :
 
