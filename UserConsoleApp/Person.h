@@ -13,12 +13,12 @@ private:
 
 public:
 	Person(const std::string& name,
-		const std::string& lastName,
+		const std::string& lastName = "",
 		unsigned short age, 
 		bool isMarried, 
 		const std::string& city, 
-		const std::string& profession,
-		const std::string& myMusic) :
+		const std::string& profession = "",
+		const std::string& myMusic = "") :
 
 		name(name),
 		age(age),
