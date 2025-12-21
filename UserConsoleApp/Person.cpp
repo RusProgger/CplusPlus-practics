@@ -25,5 +25,6 @@ void Person::printInfoUser() const {
 	std::cout << "Семейное положение: " << ((isMarried) ? "Да" : "Нет") << std::endl;
 	std::cout << "Город проживания: " << city << std::endl;
 	std::cout << "Профессия: " << profession<< std::endl;
+	std::cout << "Любимая музыка: " << myMusic << std::endl;
 	std::cout << "\n";
 }
