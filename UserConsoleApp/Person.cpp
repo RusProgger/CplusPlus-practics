@@ -16,7 +16,7 @@
 //}
 
 void Person::printInfoUser() const {
-	constexpr int STARLENGTH = 40;
+	constexpr int STARLENGTH = 50;
 	std::cout << std::string(STARLENGTH, '*');
 
 
