@@ -25,5 +25,7 @@ int main() {
 		user.printInfoUser();
 	}
 
+	std::cin.get();
+
 	return 0;
 }
