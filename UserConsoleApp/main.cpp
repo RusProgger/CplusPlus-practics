@@ -25,6 +25,8 @@ int main() {
 		user.printInfoUser();
 	}
 
+
+	std::cout << "Нажмите Enter для выхода...";
 	std::cin.get();
 
 	return 0;
