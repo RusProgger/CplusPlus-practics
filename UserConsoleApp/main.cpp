@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Person.h"
+#include "printBox.h"
 #include <vector>
 
 // Cчетчик id
@@ -18,22 +19,23 @@ void vectorUser(std::vector<Person>& users) {
 }
 
 
-void mainWelcome() {
-	std::cout << "*********************************************************\n";
-	std::cout << "*                                                       *\n";
-	std::cout << "*                                                       *\n";
-	std::cout << "*               База данных пользователей               *\n";
-	std::cout << "*                                                       *\n";
-	std::cout << "*                                                       *\n";
-	std::cout << "*********************************************************\n";
-}
+//void mainWelcome() {
+//	std::cout << "*********************************************************\n";
+//	std::cout << "*                                                       *\n";
+//	std::cout << "*                                                       *\n";
+//	std::cout << "*               База данных пользователей               *\n";
+//	std::cout << "*                                                       *\n";
+//	std::cout << "*                                                       *\n";
+//	std::cout << "*********************************************************\n";
+//}
 
 
 int main() {
 
 	setlocale(LC_ALL, "russian");
 
-	mainWelcome();
+	printBox("База данных пользователей", 30);
+
 
 	std::vector<Person> users;
 	vectorUser(users);
