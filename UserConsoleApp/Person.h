@@ -4,6 +4,10 @@
 class Person {
 private:
 	unsigned short idUser{};
+	// Создаем общий счетчик для id пользователей
+
+	static unsigned short nextUserId;
+
 	std::string name;
 	std::string lastName;
 	unsigned short age{};
@@ -23,7 +27,7 @@ public:
 		const std::string& profession = "",
 		const std::string& myMusic = "") :
 
-		idUser(idUser),
+		idUser(nextUserId),
 		name(name),
 		lastName(lastName),
 		age(age),
