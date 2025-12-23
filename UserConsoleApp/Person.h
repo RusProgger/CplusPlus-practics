@@ -3,6 +3,7 @@
 
 class Person {
 private:
+	unsigned short idUser{};
 	std::string name;
 	std::string lastName;
 	unsigned short age{};
@@ -12,7 +13,8 @@ private:
 	std::string myMusic;
 
 public:
-	Person(const std::string& name,
+	Person(
+		const std::string& name,
 		const std::string& lastName = "",
 		unsigned short age = 0, 
 		bool isMarried = false, 
