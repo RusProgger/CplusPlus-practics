@@ -18,10 +18,22 @@ void vectorUser(std::vector<Person>& users) {
 }
 
 
+void mainWelcome() {
+	std::cout << "*********************************************************\n";
+	std::cout << "*                                                       *\n";
+	std::cout << "*                                                       *\n";
+	std::cout << "*               База данных пользователей               *\n";
+	std::cout << "*                                                       *\n";
+	std::cout << "*                                                       *\n";
+	std::cout << "*********************************************************\n";
+}
+
 
 int main() {
-	
+
 	setlocale(LC_ALL, "russian");
+
+	mainWelcome();
 
 	std::vector<Person> users;
 	vectorUser(users);
