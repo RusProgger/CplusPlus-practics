@@ -20,7 +20,7 @@ void Person::printInfoUser() const {
 	std::cout << std::string(STARLENGTH, '*');
 
 	std::cout << "\nID: " << idUser << std::endl;
-	std::cout << "\nИмя: " << name << std::endl;
+	std::cout << "Имя: " << name << std::endl;
 	std::cout << "Фамилия: " << lastName << std::endl;
 	std::cout << "Возраст: " << age << std::endl;
 	std::cout << "Семейное положение: " << ((isMarried) ? "Да" : "Нет") << std::endl;
