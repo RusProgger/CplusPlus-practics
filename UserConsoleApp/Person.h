@@ -23,7 +23,7 @@ public:
 		const std::string& profession = "",
 		const std::string& myMusic = "") :
 
-		idUser(id),
+		idUser(idUser),
 		name(name),
 		lastName(lastName),
 		age(age),

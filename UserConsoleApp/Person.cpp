@@ -19,7 +19,7 @@ void Person::printInfoUser() const {
 	constexpr int STARLENGTH = 50;
 	std::cout << std::string(STARLENGTH, '*');
 
-
+	std::cout << "\nID: " << idUser << std::endl;
 	std::cout << "\nИмя: " << name << std::endl;
 	std::cout << "Фамилия: " << lastName << std::endl;
 	std::cout << "Возраст: " << age << std::endl;
