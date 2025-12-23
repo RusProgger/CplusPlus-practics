@@ -3,6 +3,10 @@
 #include "Person.h"
 #include <vector>
 
+// Cчетчик id
+
+unsigned short Person::nextUserId = 1;
+
 // передача вектора по ссылке
 void vectorUser(std::vector<Person>& users) {
 	users.emplace_back("Андрей", "Иванов", 25, false, "Киев", "Охранник", "Рок");
