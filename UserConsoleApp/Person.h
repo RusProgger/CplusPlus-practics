@@ -14,6 +14,7 @@ private:
 
 public:
 	Person(
+		unsigned short idUser,
 		const std::string& name,
 		const std::string& lastName = "",
 		unsigned short age = 0, 
@@ -21,6 +22,7 @@ public:
 		const std::string& city = "",
 		const std::string& profession = "",
 		const std::string& myMusic = "") :
+
 
 		name(name),
 		lastName(lastName),
