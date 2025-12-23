@@ -16,6 +16,7 @@ void vectorUser(std::vector<Person>& users) {
 	users.emplace_back("Денис", "Марковский", 33, false, "Кировоград", "Программист", "Scooter");
 	users.emplace_back("Максим", "Дяченко", 30, true, "Днепр", "Инженер", "Шансон");
 	users.emplace_back("Марк", "Сидоренко", 38, false, "Киев", "Безработный ", "Шансон");
+	users.emplace_back("Николай", "Михайленко", 26, tre, "Ужгород", "Маркетолог ", "Попса");
 }
 
 
