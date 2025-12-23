@@ -15,6 +15,7 @@ private:
 	std::string city;
 	std::string profession;
 	std::string myMusic;
+	int8_t salary;
 
 public:
 	Person(
