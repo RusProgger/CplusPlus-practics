@@ -15,7 +15,7 @@ private:
 	std::string city;
 	std::string profession;
 	std::string myMusic;
-	int8_t salary;
+	uint16_t salary;
 
 public:
 	Person(
@@ -26,7 +26,8 @@ public:
 		bool isMarried = false, 
 		const std::string& city = "",
 		const std::string& profession = "",
-		const std::string& myMusic = "") :
+		const std::string& myMusic = "",
+		uint16_t salary = 0 ) :
 
 		idUser(nextUserId++),
 		name(name),
