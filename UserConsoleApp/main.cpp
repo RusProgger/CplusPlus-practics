@@ -10,7 +10,7 @@ unsigned short Person::nextUserId = 1;
 
 // передача вектора по ссылке
 void vectorUser(std::vector<Person>& users) {
-	users.emplace_back("Андрей", "Иванов", 25, false, "Киев", "Охранник", "Рок");
+	users.emplace_back("Андрей", "Иванов", 25, false, "Киев", "Охранник", "Рок", 23321);
 	users.emplace_back("Иван",  "Захаров", 27, true, "Харьков", "Менеджер", "Rammstein");
 	users.emplace_back("Николай", "Пушкарёв", 31, true, "Одесса", "Веб-разработчик", "Клубняк");
 	users.emplace_back("Денис", "Марковский", 33, false, "Кировоград", "Программист", "Scooter");
