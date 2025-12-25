@@ -46,7 +46,7 @@ int main() {
 		user.printInfoUser();
 	}
 
-	
+	std::cout << "Всего пользователей: " << users.size() << "\n";
 
 
 	std::cout << "Нажмите Enter для выхода...";
