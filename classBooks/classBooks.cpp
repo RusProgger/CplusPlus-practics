@@ -31,7 +31,7 @@ int main()
 	/*programming.get_info();*/
 
 
-	std::cin.get();
+	std::cin.get(); // Пауза
 	return 0;
 
 }
