@@ -28,7 +28,18 @@
 
 int main() {
 
+    int number {0};
+    std::cin >> number;
+    int alice = number + 1;
+   
+    for(int i = 0; i < alice; i++) {
+        std::cout << "Cap" << " ";
+    }
 
+    for(int i = 0; i < alice; i++) {
+        std::cout << "Peole" << " ";
+
+    }
 
     std::cin.get();
     return 0;
