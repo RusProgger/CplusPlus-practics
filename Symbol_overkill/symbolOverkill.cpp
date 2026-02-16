@@ -12,7 +12,7 @@ int main() {
     for(int i = 0; i < text.size(); i++) {
         std::cout << "'" << text[i] << "'";
 
-        // Проверка если символ в конце
+        // Условие проверки
 
         if (i < text.size() - 1) {
             std::cout << ",";
