@@ -1,7 +1,5 @@
 #include <iostream>
 
-
-
 int main() {
 
     const int n = 8;
@@ -11,6 +9,10 @@ int main() {
     for(int i = 0; i < n; i++) {
         std::cout << a[i] << std::endl;
     }
+
+
+    // Пауза
+    std::cin.get();
 
     return 0;
 }
