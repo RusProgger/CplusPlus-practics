@@ -19,7 +19,10 @@ int main() {
     std::cout << "Pointer value: " << *number_pt << "\n";
 
 
-    // memor
+    // memory heap 
+
+    int* num_ptr = new int(2000);
+    
 
     std::cin.get();
     return 0;
