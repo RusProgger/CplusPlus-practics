@@ -5,14 +5,14 @@
 
 
 void pauseWait(int sec) {
-    std::this_thread::sleep_for(std::chrono::seconds(sec));
+    std::this_thread::sleep_for(std::chrono::milliseconds(sec));
 }
 
 int main() {
 
     std::string value[] = {
         "Port testing: ",
-        "Port testing bad: "
+        "Port testing bad: ",
         "Port testing warning"
     };
 
