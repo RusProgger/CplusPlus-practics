@@ -28,7 +28,11 @@ int main() {
     delete num_ptr;
     num_ptr = nullptr;
 
-    
+    if(num_ptr != nullptr) {
+        std::cout << "Memory leak\n"; 
+    } else {
+        std::cout << "Memory clear\n";
+    }
 
     std::cin.get();
     return 0;
