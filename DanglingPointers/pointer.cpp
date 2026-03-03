@@ -8,6 +8,16 @@ int main() {
 
     std::cout << "Input variable = " << number << "\n";
 
+    // pointer number 
+
+    int* number_pt = &number;
+
+    // Input pointer number 
+
+    std::cout << "Adress: " << number_pt << "\n";
+
+    std::cout << "Pointer value: " << *number_pt << "\n";
+
 
     std::cin.get();
     return 0;
