@@ -14,10 +14,12 @@ int main() {
 
     // Input pointer number 
 
-    std::cout << "Adress: " << number_pt << "\n";
+    std::cout << "Adress: " << &number_pt << "\n";
 
     std::cout << "Pointer value: " << *number_pt << "\n";
 
+
+    // memor
 
     std::cin.get();
     return 0;
