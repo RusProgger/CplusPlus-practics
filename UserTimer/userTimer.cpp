@@ -12,8 +12,8 @@ int main() {
         return 0;
     }
 
-    for(int timer = userInputTime; timer >= 0; timer--) {
-        std::cout << "Timer start: " << timer << "\r" << std::flush;
+    for(int timer = userInputTime; timer >= 1; timer--) {
+        std::cout << "Timer start: " << timer << "  \r" << std::flush;
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 
