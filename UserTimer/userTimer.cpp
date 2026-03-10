@@ -3,6 +3,7 @@
 #include <thread>
 
 int main() {
+    int userInputTime {0};
     
 
 
