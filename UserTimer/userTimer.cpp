@@ -7,7 +7,7 @@ int main() {
     std::cout << "Input number timer: ";
     std::cin >> userInputTime;
 
-    if(userInputTime < 0) {
+    if(userInputTime <= 0) {
         std::cout << "Error. Minimum number 1. ";    
         return 0;
     }
@@ -16,6 +16,9 @@ int main() {
         std::cout << "Timer start: " << timer << "  \r" << std::flush;
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
+
+    std::cout << "Timer end! ";
+
 
     return 0;
 }
