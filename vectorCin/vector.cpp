@@ -17,7 +17,12 @@ int main() {
 
     // Реализация вектора
     std::vector<int> numberVector(numberInput);
-
+    
+    // Запрашиваем ввод 
+    std::cout << "input number: ";
+    for(int i = 0; i < numberInput; i++) {
+        std::cin >> numberVector[i];
+    }
 
 
 
