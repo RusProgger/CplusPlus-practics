@@ -15,7 +15,7 @@ int main() {
         return 1;
     }
 
-    // Создание вектора
+    // Реализация вектора
     std::vector<int> numberVector(numberInput);
 
 
