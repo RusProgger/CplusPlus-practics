@@ -19,20 +19,18 @@ int main() {
     std::vector<int> numberVector(numberInput);
     
     // Запрашиваем ввод 
-    std::cout << "input number: ";
     for(int i = 0; i < numberInput; i++) {
+        std::cout << "input number: ";
         std::cin >> numberVector[i];
     }
 
     // Реализация вывода
-    std::cout << "You entered:";
+    std::cout << "You entered:\n";
     for(int i = 0; i < numberInput; i++) {
         std::cout << "Vector " << i << ": " << numberVector[i] << std::endl;
     }
 
-    std::cout << "";
-
-
+    std::cout << "\n";
 
     return 0;
 }
