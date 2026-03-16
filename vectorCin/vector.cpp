@@ -25,8 +25,12 @@ int main() {
     }
 
     // Реализация вывода
-    
-    std::cout << "You entered:\n";
+
+    std::cout << std::endl;
+
+    std::cout << "-------------------------\n";
+
+    std::cout << "\nYou entered:\n";
     for(int i = 0; i < numberInput; i++) {
         std::cout << "Vector " << i << ": " << numberVector[i] << std::endl;
     }
