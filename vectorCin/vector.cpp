@@ -8,5 +8,17 @@ int main() {
 
     std::cin >> numberInput;
 
+    // Проверка если пользователь введет 0 или меньше
+
+    if(std::cin.fail() || numberInput <= 0) {
+        std::cout << "Error!! Please number min 1.";
+        return 1;
+    }
+
+    std::vector<int> numberVector(numberInput);
+
+
+
+
     return 0;
 }
