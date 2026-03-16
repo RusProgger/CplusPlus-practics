@@ -11,7 +11,7 @@ int main() {
     // Проверка если пользователь введет 0 или меньше
 
     if(std::cin.fail() || numberInput <= 0) {
-        std::cout << "Error!! Please number min 1.";
+        std::cout << "Error!! Please enter a positive number.";
         return 1;
     }
 
