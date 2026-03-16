@@ -24,6 +24,12 @@ int main() {
         std::cin >> numberVector[i];
     }
 
+    // Реализация вывода
+    std::cout << "You entered:";
+    for(int i = 0; i < numberInput; i++) {
+        std::cout << numberVector[i] << std::endl;
+    }
+
 
 
     return 0;
