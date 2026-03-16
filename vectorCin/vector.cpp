@@ -20,11 +20,12 @@ int main() {
     
     // Запрашиваем ввод 
     for(int i = 0; i < numberInput; i++) {
-        std::cout << "input number: ";
+        std::cout << "input number " << i << ": ";
         std::cin >> numberVector[i];
     }
 
     // Реализация вывода
+    
     std::cout << "You entered:\n";
     for(int i = 0; i < numberInput; i++) {
         std::cout << "Vector " << i << ": " << numberVector[i] << std::endl;
