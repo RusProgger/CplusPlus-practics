@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
 
 int main() {
 
@@ -38,7 +40,7 @@ int main() {
 
     // Реализация сортировки
 
-    
+    sort(numberVector.begin(), numberVector.end());
 
     std::cout << "\n";
 
