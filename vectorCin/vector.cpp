@@ -35,6 +35,11 @@ int main() {
         std::cout << "Vector " << i << ": " << numberVector[i] << std::endl;
     }
 
+
+    // Реализация сортировки
+
+    
+
     std::cout << "\n";
 
     return 0;
