@@ -42,6 +42,9 @@ int main() {
 
     sort(numberVector.begin(), numberVector.end());
 
+
+    std::cout << "\n ------------- Sort vector:  --------------\n";
+
     // Вывод сортированного вектора
 
     for(auto i : numberVector) {
