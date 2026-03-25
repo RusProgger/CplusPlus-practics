@@ -42,7 +42,7 @@ int main() {
         std::cout << allocateNumber_p[i] << " ";
     }
 
-    
+    std::cout << std::endl;
 
     delete[] allocateNumber_p;
 
