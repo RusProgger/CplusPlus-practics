@@ -2,8 +2,6 @@
 
 int main() {
 
-    // Пузырьковая сортировка
-
     int allocateNumber {};
     // Спрашиваем у пользователя сколько байтов памяти он хочет выделить для массива
     std::cout << "How much memory do you want to allocate in bytes? ";
@@ -25,7 +23,7 @@ int main() {
         std::cin >> allocateNumber_p[i];
     }
     
-    
+        // Пузырьковая сортировка
     for(int i = 0; i < allocateNumber; i++) {
         for(int j = 0; j < allocateNumber - i - 1; j++) {
             if(allocateNumber_p[j] > allocateNumber_p[j + 1]) {
@@ -37,7 +35,7 @@ int main() {
         }
     }
 
-    
+
 
     delete[] allocateNumber_p;
 
