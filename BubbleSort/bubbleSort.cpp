@@ -12,12 +12,16 @@ int main() {
     int* allocateNumber_p = new int[allocateNumber];
     
     // проверка если память выделилась
-    if (allocateNumber_p == NULL) {
-        std::cout << "Error! Memory not allocated." << std::endl;
+    try {
+        int* allocateNumber_p = new int[allocateNumber];
+    } catch (std::bad_alloc& e) {
+        std::cout << "Error! Memory not allocated: " << e.what() << std::endl;
         return 1;
     }
 
-    
+    for(int i = 0; i < allocateNumber; i++) {
+    std::cin >> allocateNumber_p[i];
+    }
     
 
     delete[] allocateNumber_p;
