@@ -9,7 +9,7 @@ int main() {
     std::cout << "How much memory do you want to allocate in bytes? ";
     std::cin >> allocateNumber;
 
-    int* allocateNumber_p = new int[allocateNumber];
+    int* allocateNumber_p = nullptr;
     
     // проверка если память выделилась
     try {
@@ -24,6 +24,19 @@ int main() {
         std::cout << "Enter array element: ";
         std::cin >> allocateNumber_p[i];
     }
+    
+    
+    for(int i = 0; i < allocateNumber; i++) {
+        for(int j = 0; j < allocateNumber - i - 1; j++) {
+            if(allocateNumber_p[j] > allocateNumber_p[j + 1]) {
+                // создаем переменную
+                int count_arr = allocateNumber_p[j];
+                allocateNumber_p[j] = allocateNumber_p[j + 1];
+                allocateNumber_p[j + 1] = count_arr;
+            }
+        }
+    }
+
     
 
     delete[] allocateNumber_p;
