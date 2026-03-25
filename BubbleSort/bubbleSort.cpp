@@ -11,7 +11,7 @@ int main() {
     
     // проверка если память выделилась
     try {
-        int* allocateNumber_p = new int[allocateNumber];
+        allocateNumber_p = new int[allocateNumber]; 
     } catch (std::bad_alloc& e) {
         std::cout << "Error! Memory not allocated: " << e.what() << std::endl;
         return 1;
@@ -45,6 +45,7 @@ int main() {
     std::cout << std::endl;
 
     delete[] allocateNumber_p;
+    allocateNumber_p = nullptr;
 
     return 0;
 }
