@@ -37,6 +37,13 @@ int main() {
 
     // вывод отсортированного массива
 
+    std::cout << "Sorted array: ";
+    for(int i = 0; i < allocateNumber; i++) {
+        std::cout << allocateNumber_p[i] << " ";
+    }
+
+    
+
     delete[] allocateNumber_p;
 
     return 0;
