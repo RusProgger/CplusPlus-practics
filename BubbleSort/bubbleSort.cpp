@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-
+    // вывод отсортированного массива
 
     delete[] allocateNumber_p;
 
