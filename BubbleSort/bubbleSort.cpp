@@ -19,8 +19,10 @@ int main() {
         return 1;
     }
 
+    // Просим пользователя ввести данные 
     for(int i = 0; i < allocateNumber; i++) {
-    std::cin >> allocateNumber_p[i];
+        std::cout << "Enter array element: ";
+        std::cin >> allocateNumber_p[i];
     }
     
 
