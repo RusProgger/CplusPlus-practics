@@ -4,7 +4,7 @@ int main() {
 
     int allocateNumber {};
     // Спрашиваем у пользователя сколько байтов памяти он хочет выделить для массива
-    std::cout << "How much memory do you want to allocate in bytes? ";
+    std::cout << "How many elements do you want in the array? ";
     std::cin >> allocateNumber;
 
     int* allocateNumber_p = nullptr;
