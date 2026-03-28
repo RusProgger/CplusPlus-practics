@@ -20,12 +20,13 @@ int main() {
 
     for(int i = 0; i < countArr; i++) {
         for(int a = 0; a <= 100; a++) {
-            std::cout << "\r" << value[i] << ":\t" << a << "%" << std::flush;
+            std::cout << "\r" << value[i] << "\t" << a << "%" << std::flush;
             pauseWait(1);
         }
 
         std::cout << std::endl;
     }
+
 
     std::cin.get();
     return 0;
