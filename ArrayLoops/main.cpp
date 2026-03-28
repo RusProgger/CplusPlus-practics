@@ -13,7 +13,7 @@ int main() {
     std::string value[] = {
         "Port testing: ",
         "Port testing bad: ",
-        "Port testing warning"
+        "Port testing warning: "
     };
 
     int countArr = sizeof(value) / sizeof(value[0]);
