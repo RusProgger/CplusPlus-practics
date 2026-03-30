@@ -54,7 +54,7 @@ int main() {
     std::cout << "\n";
 
     // задержка консоли
+    std::cin.get();
 
-    
     return 0;
 }
