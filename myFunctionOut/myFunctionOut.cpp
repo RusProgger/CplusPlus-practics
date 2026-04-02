@@ -4,7 +4,7 @@
 
 // Пишем свою функцию printOut;
 
-void printOut() {
+void printOut(const std::string& var, const std::string& var2) {
     
 }
 
