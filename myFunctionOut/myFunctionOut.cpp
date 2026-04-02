@@ -10,5 +10,6 @@ int main() {
 
 
     // задержка консоли
+    std::cin.get();
     return 0;
 }
