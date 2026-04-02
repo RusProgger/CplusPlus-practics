@@ -4,6 +4,10 @@
 
 // Пишем свою функцию printOut;
 
+void printOut() {
+    
+}
+
 
 int main() {
 
