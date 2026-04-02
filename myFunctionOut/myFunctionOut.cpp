@@ -1,19 +1,28 @@
 #include <iostream>
-#include <format>
 #include <string>
 
-// Пишем свою функцию printOut;
 
-void printOut(const std::string& var, const std::string& var2) {
-    
+void printOut(const std::string& text, const std::string& name) {
+    std::string out = text;
+    size_t pos = out.find("{name}");
+
+    if (pos != std::string::npos) {
+
+        out.replace(pos, 6, name);
+    }
+
+    std::cout << out << std::endl;
 }
 
 
+
 int main() {
+    std::string name = "Alice";
 
+    std::string text = "{name}";
+    printOut(text, name); 
 
+    std::cin.get(); // задержка консоли
 
-    // задержка консоли
-    std::cin.get();
     return 0;
 }
