@@ -5,7 +5,11 @@
 
 int main() {
 
-    
+    char letterInput;
+    std::cout << "Enter symbol: ";
+    std::cin >> letterInput;
+
+    std::cout << FoodForToday(letterInput);
 
     // Задержка ввода
     std::cin.get();
