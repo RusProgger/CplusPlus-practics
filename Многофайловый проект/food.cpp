@@ -1,3 +1,5 @@
+#include "food.h"
+
 const char* FoodForToday(char letter) {
     if( letter == 'a' || letter == 'A') {
         return "Apple";
