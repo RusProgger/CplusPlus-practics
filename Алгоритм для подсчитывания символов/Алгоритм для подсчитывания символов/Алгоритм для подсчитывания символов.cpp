@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 
 // Локализация 
 
@@ -10,6 +11,10 @@ int main() {
 
     Locale();
 
+    std::string _str;
+
+    std::cout << "Введите строку: ";
+    std::getline(std::cin, _str);
 
     
 
