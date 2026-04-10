@@ -4,7 +4,7 @@
 // Локализация 
 
 void Locale() {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, "");
 }
 
 int main() {
@@ -13,7 +13,7 @@ int main() {
 
     std::string _str{};
 
-    uint16_t maxCount{};
+    size_t maxCount{};
 
     std::cout << "Введите строку: ";
     std::getline(std::cin, _str);
@@ -26,7 +26,7 @@ int main() {
 
     // Реализация алгоритма 
 
-    for (int i = 0; i < _str.size(); i++) {
+    for (size_t i = 0; i < _str.size(); i++) {
         if (_str[i] == symbol) {
             maxCount += 1;
         }
