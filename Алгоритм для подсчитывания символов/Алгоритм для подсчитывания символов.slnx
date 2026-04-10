@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Алгоритм для подсчитывания символов/Алгоритм для подсчитывания символов.vcxproj" />
+  <Project Path="Алгоритм для подсчитывания символов/Алгоритм для подсчитывания символов.vcxproj" Id="6f1bd9db-71fa-43be-868d-b08d5e6f2cd9" />
 </Solution>
