@@ -24,7 +24,7 @@ int main() {
     std::cout << b << "\n";
     std::cout << std::setprecision(17) << (n - 2) << "\n";
 
-
+    std::cin.get();
     return 0;
 }
 
