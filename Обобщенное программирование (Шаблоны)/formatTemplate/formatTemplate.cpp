@@ -11,7 +11,14 @@ T print() {
 
 int main() {
 
-    std::cout << "Enter word: ";
+    std::cout << "Enter number: ";
+
+    int number = print<int>();
+
+    std::cout << "Enter world: ";
+    std::string world = print<std::string>();
+
+    
 
     // std::cin >> value;
     // auto result = print(value);
