@@ -2,7 +2,7 @@
 #include <format>
 
 template <typename T>
-T print(T value) {
+T print(const T& value) {
     return value;
 }
 
