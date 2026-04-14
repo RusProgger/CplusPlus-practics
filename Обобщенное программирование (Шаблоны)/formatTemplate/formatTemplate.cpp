@@ -1,5 +1,6 @@
 #include <iostream>
 #include <format>
+#include <string>
 
 template <typename T>
 T print(const T& value) {
@@ -8,6 +9,10 @@ T print(const T& value) {
 
 int main() {
 
+    std::cout << "Enter word: ";
+    
+
+    auto result = print(value);
 
 
     return 0;
