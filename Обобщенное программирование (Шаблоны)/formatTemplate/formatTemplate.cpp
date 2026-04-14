@@ -18,8 +18,8 @@ int main() {
     std::cout << "Enter world: ";
     std::string world = print<std::string>();
 
-    std::cout << std::format("{} - it is number", number);
-    std::cout << std::format("{} - it is world", world);
+    std::cout << std::format("{} - it is number\n", number);
+    std::cout << std::format("{} - it is world\n", world);
 
     // std::cin >> value;
     // auto result = print(value);
