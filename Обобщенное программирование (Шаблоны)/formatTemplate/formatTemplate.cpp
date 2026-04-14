@@ -3,15 +3,17 @@
 #include <string>
 
 template <typename T>
-T print(const T& value) {
+T print() {
+    T value;
+    std::cin >> value;
     return value;
 }
 
 int main() {
 
     std::cout << "Enter word: ";
-    
 
+    std::cin >> value;
     auto result = print(value);
 
 
