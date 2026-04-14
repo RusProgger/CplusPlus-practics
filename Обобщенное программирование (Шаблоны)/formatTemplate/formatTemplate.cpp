@@ -18,6 +18,7 @@ int main() {
     std::cout << "Enter world: ";
     std::string world = print<std::string>();
 
+    std::cout << std::format("{} - it is number", number);
     
 
     // std::cin >> value;
