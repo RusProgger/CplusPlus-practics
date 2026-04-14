@@ -11,7 +11,7 @@ T print() {
 
 int main() {
 
-    // std::cout << "Enter word: ";
+    std::cout << "Enter word: ";
 
     // std::cin >> value;
     // auto result = print(value);
