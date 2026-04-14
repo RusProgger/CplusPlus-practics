@@ -19,7 +19,7 @@ int main() {
     std::string world = print<std::string>();
 
     std::cout << std::format("{} - it is number", number);
-    
+    std::cout << std::format("{} - it is world", world);
 
     // std::cin >> value;
     // auto result = print(value);
