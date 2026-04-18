@@ -32,7 +32,12 @@ int main() {
 
     // loop output
 
-    
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < collum; j++) {
+            std::cout << matrix[i * collum + j] << " ";
+        }
+        std::cout << "\n";
+    }
 
 
 
