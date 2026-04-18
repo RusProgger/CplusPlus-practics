@@ -31,11 +31,9 @@ int main() {
     }
 
 
-    // Output matrix 
+    // Output matrix message 
 
-    std::cout << "Output matrix" << "\n";
-
-    std::cout << std::endl;
+    std::cout << "------- Output matrix: -------" << "\n";
 
     // loop output
 
