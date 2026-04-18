@@ -45,7 +45,7 @@ int main() {
 
 
     // clear buffer
-    
+    std::cin.ignore();
     // pause
     std::cin.get();
     return 0;
