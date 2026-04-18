@@ -40,6 +40,9 @@ int main() {
     }
 
 
+    // deallocate memory
+    delete[] matrix;
+
     // pause
     std::cin.get();
     return 0;
