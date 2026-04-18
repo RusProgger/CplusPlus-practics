@@ -23,5 +23,18 @@ int main() {
 
     int* matrix = new int[row * collum];
 
+    // loop
+
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < collum; j++) {
+            std::cout << "Введите значения: ";
+            std::cin >> matrix[i * collum + j];
+        }
+    }
+
+    
+
+
+
     return 0;
 }
