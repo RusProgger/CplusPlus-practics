@@ -25,7 +25,7 @@ int main() {
 
     for(int i = 0; i < row; i++) {
         for(int j = 0; j < collum; j++) {
-            std::cout << "Введите значения: ";
+            std::cout << "Введите значения матрицы " << j + 1 << ": ";
             std::cin >> matrix[i * collum + j];
         }
     }
