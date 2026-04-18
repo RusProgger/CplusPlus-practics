@@ -23,12 +23,13 @@ int main() {
 
     // loop
 
-    for(int i = 0; i < row; i++) {
-        for(int j = 0; j < collum; j++) {
-            std::cout << "Введите значения матрицы " << j + 1 << ": ";
-            std::cin >> matrix[i * collum + j];
-        }
+    for (int i = 0; i < row; i++) {
+    for (int j = 0; j < collum; j++) {
+        std::cout << "Введите значение матрицы [" 
+                  << i + 1 << "][" << j + 1 << "]: ";
+        std::cin >> matrix[i * collum + j];
     }
+}
 
 
     // Output matrix message 
