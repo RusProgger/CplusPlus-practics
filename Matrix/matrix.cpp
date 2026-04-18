@@ -43,6 +43,9 @@ int main() {
     // deallocate memory
     delete[] matrix;
 
+
+    // clear buffer
+    
     // pause
     std::cin.get();
     return 0;
