@@ -30,6 +30,9 @@ int main() {
         }
     }
 
+    // loop output
+
+    
 
 
 
