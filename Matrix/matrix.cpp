@@ -50,7 +50,7 @@ int main() {
 
     // message pause
 
-    std::cout << "Нажмите любую клавишу для выхода..." << "\n";
+    std::cout << "Press any key to exit..." << "\n";
 
     // clear buffer
     std::cin.ignore();
