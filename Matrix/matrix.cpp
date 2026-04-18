@@ -30,6 +30,13 @@ int main() {
         }
     }
 
+
+    // Output matrix 
+
+    std::cout << "Output matrix" << "\n";
+
+    std::cout << std::endl;
+
     // loop output
 
     for(int i = 0; i < row; i++) {
