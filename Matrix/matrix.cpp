@@ -50,6 +50,9 @@ int main() {
     // deallocate memory
     delete[] matrix;
 
+    // message pause
+
+    std::cout << "Нажмите любую клавишу для выхода..." << "\n";
 
     // clear buffer
     std::cin.ignore();
