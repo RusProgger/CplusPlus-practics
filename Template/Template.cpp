@@ -22,6 +22,9 @@ int main() {
     std::cout << RED << "Это переменная 1 = " << result_double << RESET << std::endl;
     std::cout << GREEN << "Это переменная 2 = " << result_int << RESET << std::endl;
 
+
+    // Pause
+    std::cin.get();
     return 0;
 
 }
