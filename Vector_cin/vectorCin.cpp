@@ -22,6 +22,6 @@ int main() {
     std::cout << "Count vector: " << numberVector << std::endl;
 
 
-
+    std::cin.get();
     return 0;
 }
