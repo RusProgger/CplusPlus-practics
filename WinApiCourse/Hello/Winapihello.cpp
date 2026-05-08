@@ -16,5 +16,7 @@ int main() {
 
     MessageBoxA(NULL, msg.c_str(), "Window", MB_OK);
 
+    std::cin.get();
+
     return 0;
 }
