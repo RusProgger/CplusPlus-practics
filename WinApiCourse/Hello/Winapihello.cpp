@@ -11,7 +11,8 @@ int main() {
 
     std::string msg = std::format("Hello {}", user);
 
-    Beep(500, 300);
+    
+    // Beep(500, 300);
 
     MessageBoxA(NULL, msg.c_str(), "Window", MB_OK);
 
