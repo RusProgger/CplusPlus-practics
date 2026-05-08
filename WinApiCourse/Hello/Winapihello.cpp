@@ -15,6 +15,7 @@ int main() {
     // Beep(500, 200);
 
     MessageBoxA(NULL, msg.c_str(), "Window", MB_OK);
+    MessageBoxA(NULL, msg.c_str(), "Window", MB_OK);
 
     std::cin.get();
 
