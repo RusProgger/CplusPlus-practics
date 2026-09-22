@@ -1,6 +1,7 @@
 #include <iostream>
 #include <print>
 #include <new>
+#include <windows.h>
 
 void locale() {
     SetConsoleOutputCP(CP_UTF8);
@@ -26,8 +27,8 @@ int main() {
         arrs = new int[n];
     } catch (const std::bad_alloc&) {
         std::print("Не удалось выделить память!\n");
+        return 1;
     }
-
 
     std::cin.get();
     return 0;
