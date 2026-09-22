@@ -26,7 +26,6 @@ int main() {
         return 1;
     }
 
-
     int *arrs = nullptr;
 
     // проверка выведилась ли память
@@ -36,6 +35,13 @@ int main() {
     } catch (const std::bad_alloc&) {
         std::print("Не удалось выделить память!\n");
         return 1;
+    }
+
+    for(int i = 0; i < n; i++) {
+        std::print("Введите элемент массива {}: ", i);
+        int arrs_user;
+        std::cin >> arrs_user;
+        arrs[i] = arrs_user;
     }
 
     std::cin.get();
