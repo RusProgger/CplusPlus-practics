@@ -8,7 +8,6 @@ void locale() {
     SetConsoleCP(CP_UTF8);
 }
 
-
 int main() {
 
     // Locale
@@ -46,11 +45,23 @@ int main() {
 
     // Вывод массива 
 
+    std::print("\n--------------- Вывод ---------------\n");
+
     for(int i = 0; i < n; i++) {
         std::print("Вывод элемента массива {}: \n", arrs[i]);
     }
 
-    std::cin.get();
+    std::print("\n--------------- Вывод массива от последнего элемента к первому элементу ---------------\n");
+
+    for(int i = n - 1; i >= 0; i--) {
+        std::print("Вывод элемента массива {}: \n", arrs[i]);
+    }
+
+    delete[] arrs;
+    arrs = nullptr;
+
+    std::cin.ignore(); 
+    std::cin.get();      
     return 0;
 }
 
