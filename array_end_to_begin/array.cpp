@@ -7,12 +7,24 @@ void locale() {
 }
 
 
-
 int main() {
 
     // Locale
 
     locale();
+
+    int n {}; // Размер массива
+    std::print("Введите размер массива: ");
+    std::cin >> n;
+
+    int *arrs = nullptr;
+
+    // проверка выведилась ли память
+
+    try {
+        
+    }
+
 
     std::cin.get();
     return 0;
