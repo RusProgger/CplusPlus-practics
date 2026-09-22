@@ -44,6 +44,12 @@ int main() {
         arrs[i] = arrs_user;
     }
 
+    // Вывод массива 
+
+    for(int i = 0; i < n; i++) {
+        std::print("Вывод элемента массива {}: \n", arrs[i]);
+    }
+
     std::cin.get();
     return 0;
 }
