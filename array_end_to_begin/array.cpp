@@ -8,6 +8,16 @@ void locale() {
     SetConsoleCP(CP_UTF8);
 }
 
+
+int* allocate_memory(int n) {
+    try {
+        return new int[n];
+    } catch (const std::bad_alloc&) {
+        std::print("Не удалось выделить память!\n");
+        return nullptr;
+    }
+}
+
 int main() {
 
     // Locale
@@ -25,16 +35,22 @@ int main() {
         return 1;
     }
 
-    int *arrs = nullptr;
+    //int *arrs = nullptr;
+
+    int *arrs = allocate_memory(n);
 
     // проверка выведилась ли память
 
-    try {
-        arrs = new int[n];
-    } catch (const std::bad_alloc&) {
-        std::print("Не удалось выделить память!\n");
+    if(arrs == allocate_memory(n)) {
         return 1;
     }
+
+    // try {
+    //     arrs = new int[n];
+    // } catch (const std::bad_alloc&) {
+    //     std::print("Не удалось выделить память!\n");
+    //     return 1;
+    // }
 
     for(int i = 0; i < n; i++) {
         std::print("Введите элемент массива {}: ", i);
