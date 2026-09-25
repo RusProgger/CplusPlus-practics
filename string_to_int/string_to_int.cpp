@@ -26,4 +26,6 @@ int main() {
 
     std::print("Output: {}", number_int + 5);
 
+    return 0;
+
 }
